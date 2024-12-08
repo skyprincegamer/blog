@@ -1,32 +1,32 @@
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap');
 
 .libre {
 	font-family: "Libre Baskerville", serif;
 	font-weight: 700;
 	font-style: normal;
-  }
-  
+}
 
-  .mono {
+
+.mono {
 	font-family: "IBM Plex Mono", serif;
 	font-weight: 500;
 	font-style: normal;
-  }
+}
 
 html {
 	height: 100%;
 }
 
 body {
-	
+
 	color: white;
-	
+
 }
 
 
 
-footer {
+.about-footer,
+.home-footer {
 	font-size: 1em;
 	text-align: center;
 	position: fixed;
@@ -35,6 +35,11 @@ footer {
 		linear-gradient(to left, #919, black);
 	display: block;
 	width: 100%;
+}
+
+.home-footer {
+	bottom: 50px;
+	background: linear-gradient(to left, black, #3cb043);
 }
 
 a {
