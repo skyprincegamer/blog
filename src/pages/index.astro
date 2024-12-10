@@ -1,24 +1,13 @@
 ---
 import '../styles/global.css';
 import About from '../components/about-footer.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+const pageHeading='The Noice Blog';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>noice</title>
-	</head>
-	<body class="mono bg-gradient-to-b sm:bg-gradient-to-r from-blue-600 to-slate-500">
-		<h1 class="libre animate-pulse text-center text-white text-5xl my-8 ">The Noice Blog</h1>
-		
+<BaseLayout pageHeading={pageHeading}>	
 		Hello World! , and welcome to my blog .<hr>
 		<br>
 		WORK IN PROGRESS (lol)
 		<About/>
-	</body>
-
-</html>
+</BaseLayout>

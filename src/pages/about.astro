@@ -1,20 +1,11 @@
 ---
 import '../styles/global.css';
 import Home from '../components/home-footer.astro'
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageHeading = "About Me"
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>noice</title>
-	</head>
-	<body class="mono bg-gradient-to-b sm:bg-gradient-to-r from-blue-600 to-slate-500">
-		<h1 class="libre animate-pulse text-center text-white text-5xl my-8 ">About Me</h1>
+<BaseLayout pageHeading={pageHeading}>
+	<hr>
 		I am a beginner dev. I use Linux <em>(Fedora 40 with KDE Plasma 6).</em> I hope that 2025 is the <em> year of the of the Linux desktop!	</em>
 		<Home/>
-	</body>
-</html>
+</BaseLayout>
