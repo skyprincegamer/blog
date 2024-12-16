@@ -1,5 +1,5 @@
 ---
-const layout: "../../layouts/BlogLayout.astro"
+const layout: "../layouts/BlogLayout.astro"
 const title : "My first blog post"
 const subtitle : "CloudClock"
 
