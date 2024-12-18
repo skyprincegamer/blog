@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 const {pageHeading} = Astro.props;
+const {grad} = Astro.props;
 ---
 
 <html lang="en">
@@ -12,8 +13,8 @@ const {pageHeading} = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>noice</title>
 	</head>
-	<body class="mono bg-gradient-to-b sm:bg-gradient-to-r from-blue-600 to-slate-500">
-		<h1 class="libre animate-pulse text-center text-white text-5xl my-8 ">{pageHeading}</h1>
+	<body class="mono bg-gradient-to-b sm:bg-gradient-to-r from-blue-600 to-slate-500 text-lg">
+		<h1 class="libre text-center text-white text-8xl my-8 underline underline-offset-4">{pageHeading}</h1>
 		
 		<slot/>	
 	</body>

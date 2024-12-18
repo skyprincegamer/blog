@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Libre+Baskerville:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+:root{
+	--footer-height : clamp(20px , 20% , 50px);
+}
 .libre {
-	font-family: "Libre Baskerville", serif;
-	font-weight: 700;
+	font-family: "Joti One", serif;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -14,34 +17,34 @@
 }
 
 html {
-	height: 100%;
+	min-height: 100vh;
 }
 
 body {
 
 	color: white;
+	padding-bottom: calc(2* var(--footer-height) + 10px);
 
 }
-
-
 
 .about-footer,
 .home-footer {
+	font-family: "Libre Baskerville";
 	font-size: 1em;
-	text-align: center;
-	position: fixed;
 	bottom: 10px;
 	background:
 		linear-gradient(to left, #919, black);
-	display: block;
 	width: 100%;
+	height: var(--footer-height);
+	position: fixed;
 }
 
 .home-footer {
-	bottom: 50px;
+	bottom: calc(var(--footer-height) + 10px);
 	background: linear-gradient(to left, black, #3cb043);
 }
 
-a {
-	color: white;
+
+p{
+	margin: 2% 5%;
 }
