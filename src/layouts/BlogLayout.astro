@@ -6,7 +6,7 @@ const {frontmatter} = Astro.props;
 ---
 
 <BaseLayout pageHeading={frontmatter.title}>
-    <h2 class="text-5xl text-center libre my-3 underline underline-offset-4">{frontmatter.subtitle}</h2>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl  text-center libre my-3 underline underline-offset-4">{frontmatter.subtitle}</h2>
 <slot />
 
 <HomeFooter/>
