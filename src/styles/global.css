@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Libre+Baskerville:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 :root{
 	--footer-height : clamp(20px , 20% , 50px);
 }
@@ -12,9 +13,10 @@
 
 
 .mono {
-	font-family: "IBM Plex Mono", serif;
+	font-family: "DM Sans", serif;
 	font-weight: 500;
 	font-style: normal;
+	
 }
 
 html {
@@ -22,7 +24,8 @@ html {
 }
 
 body {
-
+	width: 80ch;
+	margin: 0 auto;
 	color: white;
 	padding-bottom: calc(2* var(--footer-height) + 10px);
 
@@ -30,19 +33,20 @@ body {
 
 .about-footer,
 .home-footer {
-	font-family: "Libre Baskerville";
+	padding: 0 6ch 0 6ch;
 	font-size: 1em;
-	bottom: 10px;
+	bottom: 0;
 	background:
-		linear-gradient(to left, #919, black);
+		linear-gradient(to right,#8A1E3B , #919 );
 	width: 100%;
 	height: var(--footer-height);
 	position: fixed;
+	right: 0;
 }
 
 .home-footer {
-	bottom: calc(var(--footer-height) + 10px);
-	background: linear-gradient(to left, black, #3cb043);
+	bottom: var(--footer-height);
+	background: linear-gradient(to right, #3B8A1E, #3cb043);
 }
 
 

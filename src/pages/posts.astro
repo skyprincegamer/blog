@@ -1,0 +1,17 @@
+---
+import '../styles/global.css'
+import Base from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+const pageHeading = 'Posts'
+---
+
+<Base {pageHeading}>
+<p>
+    <ul style="list-style-type: disc;" >
+        <li>
+            <a href="/posts/post1" class="animate-pulse hover:text-green-400">Post 1</a>
+        </li>
+    </ul>
+</p>
+<Nav/>
+</Base>

@@ -1,11 +1,12 @@
 ---
 import '../styles/global.css';
-import Home from '../components/home-footer.astro'
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
 const pageHeading = "About Me"
 ---
 <BaseLayout pageHeading={pageHeading}>
 	<hr>
 		I am a beginner dev. I use Linux <em>(Fedora 40 with KDE Plasma 6).</em> I hope that 2025 is the <em> year of the of the Linux desktop!	</em>
-		<Home/>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg">
+		<Nav/>
 </BaseLayout>

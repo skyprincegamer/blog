@@ -1,14 +1,12 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import HomeFooter from "../components/home-footer.astro";
-import AboutFooter from "../components/about-footer.astro";
+import Nav from "../components/Nav.astro";
 const {frontmatter} = Astro.props;
 ---
 
 <BaseLayout pageHeading={frontmatter.title}>
-    <h2 class="text-3xl sm:text-4xl md:text-5xl  text-center libre my-3 underline underline-offset-4">{frontmatter.subtitle}</h2>
+    <h2 class="libre text-3xl sm:text-4xl md:text-5xl  text-center subtitle my-3 underline underline-offset-4">{frontmatter.subtitle}</h2>
 <slot />
+<Nav/>
 
-<HomeFooter/>
-<AboutFooter/>
 </BaseLayout>
