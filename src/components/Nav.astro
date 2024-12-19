@@ -1,0 +1,57 @@
+<!-- <footer class="libre about-footer flex justify-center items-center"><a class="text-white text-center text-lg lg:text-2xl" href="/about" >About Me</a></footer> -->
+<!-- <footer class="libre home-footer flex items-center justify-center"><a class="text-white text-center text-lg lg:text-2xl " href="/"> Home</a></footer> -->
+---
+
+---
+
+<nav class="mono">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/posts">Blog</a>
+    </li>
+    <li>
+      <a href="/about">About Me</a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    box-shadow: 10px 10px 3px rgba(0,0,0,0.4);
+    overflow: hidden;
+    background-color: black;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-wrap: none;
+    width: max-content;
+    color:white;
+  }
+
+  nav ul li a:hover {
+    background-color: #234a8a;
+    color: white;
+  }
+</style>
