@@ -5,8 +5,34 @@ import Nav from '../components/Nav.astro';
 const pageHeading = "About Me"
 ---
 <BaseLayout pageHeading={pageHeading}>
+	<a href="https://github.com/skyprincegamer/" slot="logo"><img src="/me.png" class=" log w-24 mr-auto ml-auto my-3 lg:absolute lg:top-0 lg:right-0" ></a></div>
+	<br>
 	<hr>
 		I am a beginner dev. I use Linux <em>(Fedora 40 with KDE Plasma 6).</em> I hope that 2025 is the <em> year of the of the Linux desktop!	</em>
-		<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"> -->
-		<Nav/>
+		
+		
+		
+		
+		<figure class=" hidden sm:flex sm:justify-center gap-5 my-10 ">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux Mascot Tux">
+		<img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/500px-Mascot_konqi.png" alt="KDE Mascot Konqi" class="k">
+		<img src="http://1.bp.blogspot.com/-Wea2H_0Os8A/VnPDF1MebUI/AAAAAAAAAT8/fYjvz8u-DeI/s1600/original1.907498.1.jpg"
+		   alt="Fedora Logo">
+	</figure>
+	<br>
+	<figcaption class="text-center hidden md:block"> Tux (Linux Mascot) ,  Konqi (KDE Mascot) and Fedora</figcaption>
+	<style>
+		img{
+			@apply rounded-lg bg-white dark:bg-black w-28 shadow-2xl shadow-black h-28 opacity-85 hover:opacity-100;
+			transition: all 0.2s;
+		}
+		.k{
+			@apply h-auto
+		}
+		.log{
+			@apply shadow-none rounded-full opacity-100 hover:animate-pulse block;
+			transition: none;
+		}
+	</style>
+	<Nav/>
 </BaseLayout>

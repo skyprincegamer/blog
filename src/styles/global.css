@@ -24,7 +24,7 @@ html {
 }
 
 body {
-	width: 80ch;
+	width: 70%;
 	margin: 0 auto;
 	color: white;
 	padding-bottom: calc(2* var(--footer-height) + 10px);
