@@ -11,11 +11,12 @@ const posts = Array.from(Array(2).keys())
 <Base {pageHeading}>
 
     <ul class="list-none">
-        {posts.map((postNum) => (
-            <li class="border-2 border-black m-2 text-2xl hover:bg-black hover:text-white" ><a class="block h-full w-full" href=`posts/post${postNum+1}`>Post {postNum+1} </a></li>
-        ))
+        {
+            posts.map((postNum) => (<li class=" postBox border-2 border-black m-2 text-2xl hover:bg-black hover:text-white  text-center" ><a class="block h-full w-full" href=`/posts/post${postNum+1}`>Post {postNum+1} </a></li>))
         }
     </ul>
 
 <Nav/>
 </Base>
+
+
