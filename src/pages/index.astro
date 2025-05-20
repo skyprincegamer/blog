@@ -3,15 +3,12 @@ import '../styles/global.css';
 import Nav from '../components/Nav.astro';
 import BaseLayout from '../layouts/BaseLayout.astro'
 const pageHeading='The Noice Blog';
-const latest_post = '/posts/post2'
 ---
 
 <BaseLayout pageHeading={pageHeading}>	
-		<header class=" libre text-center text-3xl sm:text-4xl md:text-5xl ">Hello World! , and welcome to my blog .</header><hr>
+	<header class=" libre text-center text-3xl sm:text-4xl md:text-5xl ">Hello World! , and welcome to my <a href="/posts" class="  underline mono hover:bg-black hover:text-white "><strong><em>blog</em></strong></a> .</header><hr>
 		<section style="padding: 1rem;">
-			<h2 class="text-xl sm:text-2xl md:text-3xl underline underline-offset-4"> Latest Post</h2>
-			<br>
-			<a href={latest_post} class="text-lg sm:text-xl hover:text-green-500 animate-pulse">Link</a>
+
 		</section>
 		<Nav/>
 </BaseLayout>
