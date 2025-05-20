@@ -7,7 +7,9 @@ pubDate : "2/1/2025"
 author : "ME"
 editDate : "20/5/2025"
 ---
-**EDIT 20/5/2025** : Uhmm actually I think C++ is pretty good after my Data Structures professor forced me to do data structures in C. C++ is now my preferred language when I don't know what to use such for solving LeetCode problems.
+**EDIT 20/5/2025** : Uhmm actually I think C++ is pretty good after my Data Structures professor forced me to do data structures in C. 
+
+C++ is now my preferred language when I don't know what to use such for solving LeetCode problems.
 
 But I will try to use **Rust** for everything else whenever I can. ***CUZ I AM A RUSTACEAN NOW***
 
