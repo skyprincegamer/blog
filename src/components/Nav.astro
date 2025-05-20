@@ -4,7 +4,7 @@
 
 ---
 
-<nav class="mono">
+<nav class="mono ">
   <ul>
     <li>
       <a href="/">Home</a>
@@ -27,7 +27,9 @@
     border-radius: 2rem;
     box-shadow: 10px 10px 3px rgba(0,0,0,0.4);
     overflow: hidden;
-    background-color: black;
+    background-color: #F9F9E8;
+    border: 2px solid black ;
+
   }
 
   nav ul {
@@ -36,21 +38,22 @@
     align-items: center;
     margin: 0;
     padding: 0;
+
   }
 
   nav ul li a {
     display: block;
     text-decoration: none;
-    color: white;
     padding: 1rem 1.5rem;
     text-align: center;
-    transition: all 0.3s ease;
     text-wrap: nowrap;
     width: max-content;
+    border-right: 1px solid black;
+    border-left : 1px solid black;
   }
 
   nav ul li a:hover {
-    background-color: #234a8a;
+    background-color: black;
     color: white;
   }
 </style>

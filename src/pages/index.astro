@@ -5,10 +5,17 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 const pageHeading='The Noice Blog';
 ---
 
-<BaseLayout pageHeading={pageHeading}>	
-	<header class=" libre text-center text-3xl sm:text-4xl md:text-5xl ">Hello World! , and welcome to my <a href="/posts" class="  underline mono hover:bg-black hover:text-white "><strong><em>blog</em></strong></a> .</header><hr>
+<BaseLayout pageHeading={pageHeading}>
+	<div class="spacer"/>
+	<header class=" libre  text-center text-3xl sm:text-4xl md:text-5xl ">Hello World! , and welcome to my <a href="/posts" class="  underline mono hover:bg-black hover:text-white "><strong><em>blog</em></strong></a> .</header><hr>
 		<section style="padding: 1rem;">
 
 		</section>
 		<Nav/>
 </BaseLayout>
+
+<style>
+	.spacer{
+		height: 25vw;
+	}
+</style>
