@@ -5,10 +5,36 @@ const {frontmatter} = Astro.props;
 ---
 
 <BaseLayout pageHeading={frontmatter.title}>
+    <script>
+        async function startTexting(elem : HTMLElement | null ,delay : number) {
+            if (elem == null) {
+                return;
+            }
+            const saved = elem.innerHTML;
+            elem.innerHTML = "";
+            for(let i = 0 ; i < saved.length; i++) {
+                setTimeout(() => {
+                    elem.innerHTML = saved.substring(0, i+1);
+                } , delay*i);
+            }
+        }
+        async function textAll(elems: NodeListOf<HTMLParagraphElement> , delay : number) {
+            for (const elem of elems) {
+                startTexting(elem , delay);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            startTexting(document.querySelector("h1"), 100)
+            startTexting(document.querySelector("h2") , 100)
+            textAll(document.querySelectorAll(".sub"), 100)
+            textAll(document.querySelectorAll("p"), 10)
+            startTexting(document.querySelector("nav"), 1)
+        })
+    </script>
     <h2 class=" libre text-3xl sm:text-4xl md:text-5xl  text-center subtitle my-3 underline underline-offset-4">{frontmatter.subtitle}</h2>
 
-    <h4 class="text-right italic">Published on {frontmatter.pubDate} <br>
-    Last edited on {frontmatter.editDate}</h4>
+    <h4 class="text-right italic"><div class="sub">Published on {frontmatter.pubDate} </div>
+        <div class="sub">Last edited on {frontmatter.editDate}</div></h4>
     <hr>
 <slot />
 <Nav/>
