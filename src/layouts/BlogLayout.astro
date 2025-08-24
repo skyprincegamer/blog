@@ -7,9 +7,8 @@ const {frontmatter} = Astro.props;
 <BaseLayout pageHeading={frontmatter.title}>
     <script>
         async function startTexting(elem : HTMLElement | null ,delay : number) {
-            if (elem == null) {
-                return;
-            }
+            if (elem == null) {return;}
+
             const saved = elem.innerHTML;
             elem.innerHTML = "";
             for(let i = 0 ; i < saved.length; i++) {
