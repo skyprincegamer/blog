@@ -1,0 +1,27 @@
+---
+
+---
+<script >
+    let mouseLast = {x: 0, y: 0};
+    function updateGradient(e : any){
+        const mouseElem = document.getElementById('mouse_data');
+        if(e.clientX){
+            mouseLast.x = e.clientX;
+            mouseLast.y = e.clientY;
+        }
+        if(mouseElem){
+            mouseElem.innerText = "Mouse X : " + e.clientX + " , " + "Mouse Y : " + e.clientY ;
+        }
+        const r : HTMLElement | null = document.querySelector(':root')
+        if(r) {
+            r.style.setProperty('--grad_x', (window.scrollX+mouseLast.x) + 'px');
+            r.style.setProperty('--grad_y', (window.scrollY+mouseLast.y) + 'px');
+        }
+
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+        document.addEventListener("mousemove", updateGradient)
+        document.addEventListener("scroll", updateGradient)
+    })
+</script>
+<!--<p id="mouse_data"></p>-->

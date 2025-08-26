@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,800&display=swap');
 
 :root{
+    --grad_x : 0px;
+    --grad_y : 0px;
 	--footer-height : clamp(20px , 20% , 50px);
 }
 .libre {
@@ -17,7 +19,6 @@
 	font-family: "Radley", serif;
 	font-weight: 500;
 	font-style: normal;
-	
 }
 
 html {
@@ -28,8 +29,7 @@ body {
 	width: 70%;
 	margin: 0 auto;
 	padding-bottom: calc(2* var(--footer-height) + 10px);
-	background: #F9F9E8;
-
+    background-color: #F9F4E8;
 }
 
 
@@ -39,4 +39,21 @@ p{
 }
 strong{
 	font-weight: 700;
+}
+.spacer{
+    height: 80vw;
+}
+@media only screen and (min-width: 500px){
+    body{
+        background: radial-gradient(
+                circle at var(--grad_x) var(--grad_y),
+                white,
+                blanchedalmond 70%
+        );
+    }
+}
+@media only screen and (min-aspect-ratio: 1/1){
+    .spacer{
+        height: 14vw;
+    }
 }

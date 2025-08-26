@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Mouse from "../components/Mouse.astro";
 const {pageHeading} = Astro.props;
 const {grad} = Astro.props;
 ---
@@ -14,6 +15,7 @@ const {grad} = Astro.props;
 		<title>noice</title>
 	</head>
 	<body class="mono text-lg">
+    <Mouse/>
 		<h1 class="libre text-center text-6xl md:text-8xl  my-8 underline underline-offset-4 relative">{pageHeading}</h1>
 		<slot name="logo"/>
 		<slot/>
